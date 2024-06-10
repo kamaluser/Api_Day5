@@ -1,0 +1,552 @@
+2024-06-09 01:31:04.177 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 01:31:04.213 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger - null null
+2024-06-09 01:31:04.236 +04:00 [INF] Hosting environment: Development
+2024-06-09 01:31:04.236 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-09 01:31:04.414 +04:00 [INF] HTTP GET /swagger responded 301 in 51.9325 ms
+2024-06-09 01:31:04.431 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-09 01:31:04.431 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger - 301 null null 220.9623ms
+2024-06-09 01:31:04.515 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 80.4799 ms
+2024-06-09 01:31:04.516 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 84.6786ms
+2024-06-09 01:31:04.533 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/swagger-ui-bundle.js - null null
+2024-06-09 01:31:04.533 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/swagger-ui.css - null null
+2024-06-09 01:31:04.533 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-09 01:31:04.541 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 01:31:04.545 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.683ms
+2024-06-09 01:31:04.554 +04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-09 01:31:04.554 +04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-09 01:31:04.554 +04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-09 01:31:04.554 +04:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 18.7290 ms
+2024-06-09 01:31:04.554 +04:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 18.7802 ms
+2024-06-09 01:31:04.554 +04:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 18.8228 ms
+2024-06-09 01:31:04.556 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/swagger-ui.css - 200 143943 text/css 22.8332ms
+2024-06-09 01:31:04.562 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 29.137ms
+2024-06-09 01:31:04.572 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-09 01:31:04.584 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 50.5333ms
+2024-06-09 01:31:04.617 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.5954ms
+2024-06-09 01:31:04.887 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-09 01:31:04.933 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/favicon-32x32.png - null null
+2024-06-09 01:31:04.934 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-09 01:31:04.934 +04:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.7793 ms
+2024-06-09 01:31:04.935 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/favicon-32x32.png - 200 628 image/png 1.3878ms
+2024-06-09 01:31:05.110 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 222.5639 ms
+2024-06-09 01:31:05.111 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 224.3846ms
+2024-06-09 01:31:13.777 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/api/Groups - null null
+2024-06-09 01:31:13.790 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-09 01:31:13.806 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-09 01:31:13.937 +04:00 [INF] GetAll request received
+2024-06-09 01:31:13.942 +04:00 [INF] GetAll method called
+2024-06-09 01:31:15.322 +04:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[No], [g].[Limit]
+FROM [Groups] AS [g]
+WHERE [g].[IsDeleted] = CAST(0 AS bit)
+2024-06-09 01:31:15.343 +04:00 [INF] GetAll method completed
+2024-06-09 01:31:15.343 +04:00 [INF] GetAll request processed successfully
+2024-06-09 01:31:15.347 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-09 01:31:15.361 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 1549.9229ms
+2024-06-09 01:31:15.361 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-09 01:31:15.361 +04:00 [INF] HTTP GET /api/Groups responded 200 in 1580.2757 ms
+2024-06-09 01:31:15.370 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/api/Groups - 200 null application/json; charset=utf-8 1593.2371ms
+2024-06-09 01:43:08.263 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-09 01:43:08.410 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 37.0093 ms
+2024-06-09 01:43:08.415 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 153.4353ms
+2024-06-09 01:43:08.455 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 01:43:08.461 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.0863ms
+2024-06-09 01:43:08.470 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-09 01:43:08.528 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.1132ms
+2024-06-09 01:43:08.674 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-09 01:43:08.781 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 105.3948 ms
+2024-06-09 01:43:08.782 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.4723ms
+2024-06-09 01:43:13.252 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 01:43:13.277 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-09 01:43:13.296 +04:00 [INF] Hosting environment: Development
+2024-06-09 01:43:13.296 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-09 01:43:13.561 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 161.6176 ms
+2024-06-09 01:43:13.568 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-09 01:43:13.568 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 01:43:13.567 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 292.5787ms
+2024-06-09 01:43:13.572 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.6942ms
+2024-06-09 01:43:13.605 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.6707ms
+2024-06-09 01:43:13.660 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-09 01:43:13.881 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 218.7966 ms
+2024-06-09 01:43:13.883 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 222.2172ms
+2024-06-09 01:43:41.496 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal%40gmail.com&BirthDate=10-10-2002&GroupId=1 - multipart/form-data; boundary=----WebKitFormBoundary7Rjqn4BToBLvN72B 31094
+2024-06-09 01:43:41.503 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:43:41.512 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:43:41.535 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:43:41.780 +04:00 [INF] Create request received with Email: kamal@gmail.com
+2024-06-09 01:43:43.292 +04:00 [INF] Executed DbCommand (89ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:43:43.309 +04:00 [WRN] Group not found by given GroupId
+2024-06-09 01:43:43.317 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 1777.1319ms
+2024-06-09 01:43:43.318 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:43:43.329 +04:00 [INF] HTTP POST /api/Students responded 404 in 1825.1603 ms
+2024-06-09 01:43:43.339 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal%40gmail.com&BirthDate=10-10-2002&GroupId=1 - 404 null application/json; charset=utf-8 1842.7354ms
+2024-06-09 01:43:49.065 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal%40gmail.com&BirthDate=10-10-2002&GroupId=2 - multipart/form-data; boundary=----WebKitFormBoundary9sLAVH0YuYI5gTzA 31094
+2024-06-09 01:43:49.067 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:43:49.069 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:43:49.070 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:43:49.101 +04:00 [INF] Create request received with Email: kamal@gmail.com
+2024-06-09 01:43:49.142 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:43:49.292 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:43:49.455 +04:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (Size = 35), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([BirthDate], [CreatedAt], [Email], [FullName], [GroupId], [IsDeleted], [ModifiedAt], [Photo])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-09 01:43:49.477 +04:00 [INF] Student created with Id: 3
+2024-06-09 01:43:49.477 +04:00 [INF] Student created with Id: 3
+2024-06-09 01:43:49.483 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:43:49.489 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:43:49.489 +04:00 [WRN] Student with Email: kamal@gmail.com already exists
+2024-06-09 01:43:49.490 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 420.2634ms
+2024-06-09 01:43:49.491 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:43:49.494 +04:00 [INF] HTTP POST /api/Students responded 400 in 425.1110 ms
+2024-06-09 01:43:49.495 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal%40gmail.com&BirthDate=10-10-2002&GroupId=2 - 400 null application/json; charset=utf-8 430.9456ms
+2024-06-09 01:43:55.069 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal1%40gmail.com&BirthDate=10-10-2002&GroupId=2 - multipart/form-data; boundary=----WebKitFormBoundary0391lTcuta3JhMvO 31094
+2024-06-09 01:43:55.069 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:43:55.070 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:43:55.070 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:43:55.076 +04:00 [INF] Create request received with Email: kamal1@gmail.com
+2024-06-09 01:43:55.152 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:43:55.159 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:43:55.170 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (Size = 35), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([BirthDate], [CreatedAt], [Email], [FullName], [GroupId], [IsDeleted], [ModifiedAt], [Photo])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-09 01:43:55.171 +04:00 [INF] Student created with Id: 4
+2024-06-09 01:43:55.171 +04:00 [INF] Student created with Id: 4
+2024-06-09 01:43:55.176 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:43:55.182 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:43:55.182 +04:00 [WRN] Student with Email: kamal1@gmail.com already exists
+2024-06-09 01:43:55.183 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 112.3798ms
+2024-06-09 01:43:55.183 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:43:55.184 +04:00 [INF] HTTP POST /api/Students responded 400 in 113.9600 ms
+2024-06-09 01:43:55.184 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal1%40gmail.com&BirthDate=10-10-2002&GroupId=2 - 400 null application/json; charset=utf-8 115.35ms
+2024-06-09 01:44:01.817 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal112%40gmail.com&BirthDate=10-10-2002&GroupId=2 - multipart/form-data; boundary=----WebKitFormBoundaryf2DGEoAL3Gy1zi24 31094
+2024-06-09 01:44:01.817 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:44:01.817 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:44:01.818 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:44:01.820 +04:00 [INF] Create request received with Email: kamal112@gmail.com
+2024-06-09 01:44:01.829 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:44:01.835 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:44:01.843 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (Size = 35), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([BirthDate], [CreatedAt], [Email], [FullName], [GroupId], [IsDeleted], [ModifiedAt], [Photo])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-09 01:44:01.844 +04:00 [INF] Student created with Id: 5
+2024-06-09 01:44:01.844 +04:00 [INF] Student created with Id: 5
+2024-06-09 01:44:01.846 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:44:01.847 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:44:01.847 +04:00 [WRN] Student with Email: kamal112@gmail.com already exists
+2024-06-09 01:44:01.848 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 30.0268ms
+2024-06-09 01:44:01.848 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:44:01.849 +04:00 [INF] HTTP POST /api/Students responded 400 in 31.4364 ms
+2024-06-09 01:44:01.849 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal112%40gmail.com&BirthDate=10-10-2002&GroupId=2 - 400 null application/json; charset=utf-8 32.7779ms
+2024-06-09 01:44:43.959 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/api/Students - null null
+2024-06-09 01:44:43.961 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.GetAll (Course.API)'
+2024-06-09 01:44:43.970 +04:00 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.StudentDtos.StudentGetDto]] GetAll() on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:44:43.971 +04:00 [INF] GetAll request received
+2024-06-09 01:44:44.035 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[FullName], [s].[Email], [s].[BirthDate], [s].[GroupId], [g].[No], CAST(1 AS bit), [s].[Photo]
+FROM [Students] AS [s]
+INNER JOIN [Groups] AS [g] ON [s].[GroupId] = [g].[Id]
+WHERE [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-09 01:44:44.036 +04:00 [INF] GetAll request processed successfully
+2024-06-09 01:44:44.045 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[FullName], [s].[Email], [s].[BirthDate], [s].[GroupId], [g].[No], CAST(1 AS bit), [s].[Photo]
+FROM [Students] AS [s]
+INNER JOIN [Groups] AS [g] ON [s].[GroupId] = [g].[Id]
+WHERE [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-09 01:44:44.053 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.StudentDtos.StudentGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-09 01:44:44.064 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.GetAll (Course.API) in 94.2836ms
+2024-06-09 01:44:44.065 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.GetAll (Course.API)'
+2024-06-09 01:44:44.065 +04:00 [INF] HTTP GET /api/Students responded 200 in 104.4127 ms
+2024-06-09 01:44:44.065 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/api/Students - 200 null application/json; charset=utf-8 105.6551ms
+2024-06-09 01:45:11.706 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal112%40mail.ru&BirthDate=10-10-2002&GroupId=2 - multipart/form-data; boundary=----WebKitFormBoundary9pZHQiuCdBF34B7B 135
+2024-06-09 01:45:11.707 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:45:11.708 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:45:11.708 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:45:11.715 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-09 01:45:11.740 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 31.9734ms
+2024-06-09 01:45:11.740 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:45:11.740 +04:00 [INF] HTTP POST /api/Students responded 400 in 32.8820 ms
+2024-06-09 01:45:11.741 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal112%40mail.ru&BirthDate=10-10-2002&GroupId=2 - 400 null application/problem+json; charset=utf-8 34.5663ms
+2024-06-09 01:45:22.808 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal112%40mail.ru&BirthDate=10-10-2002&GroupId=2 - multipart/form-data; boundary=----WebKitFormBoundaryXBMLXIGQbyWAbI5Z 31723
+2024-06-09 01:45:22.809 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:45:22.809 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:45:22.809 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:45:22.815 +04:00 [INF] Create request received with Email: kamal112@mail.ru
+2024-06-09 01:45:22.823 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:45:22.827 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:45:22.834 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (Size = 35), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([BirthDate], [CreatedAt], [Email], [FullName], [GroupId], [IsDeleted], [ModifiedAt], [Photo])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-09 01:45:22.835 +04:00 [INF] Student created with Id: 6
+2024-06-09 01:45:22.835 +04:00 [INF] Student created with Id: 6
+2024-06-09 01:45:22.836 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:45:22.837 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:45:22.837 +04:00 [WRN] Student with Email: kamal112@mail.ru already exists
+2024-06-09 01:45:22.837 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 28.1372ms
+2024-06-09 01:45:22.838 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:45:22.838 +04:00 [INF] HTTP POST /api/Students responded 400 in 29.4655 ms
+2024-06-09 01:45:22.839 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/Students?FullName=Kamal&Email=kamal112%40mail.ru&BirthDate=10-10-2002&GroupId=2 - 400 null application/json; charset=utf-8 30.5983ms
+2024-06-09 01:50:53.718 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 01:50:53.753 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-09 01:50:53.769 +04:00 [INF] Hosting environment: Development
+2024-06-09 01:50:53.770 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-09 01:50:54.053 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 156.7134 ms
+2024-06-09 01:50:54.058 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 308.7983ms
+2024-06-09 01:50:54.098 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 01:50:54.101 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.0506ms
+2024-06-09 01:50:54.135 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-09 01:50:54.167 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.4167ms
+2024-06-09 01:50:54.376 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-09 01:50:54.602 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 225.1127 ms
+2024-06-09 01:50:54.604 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 228.3445ms
+2024-06-09 01:51:02.088 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/api/Students - null null
+2024-06-09 01:51:02.106 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.GetAll (Course.API)'
+2024-06-09 01:51:02.125 +04:00 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.StudentDtos.StudentGetDto]] GetAll() on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:51:02.262 +04:00 [INF] GetAll request received
+2024-06-09 01:51:04.253 +04:00 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[FullName], [s].[Email], [s].[BirthDate], [s].[GroupId], [g].[No], CAST(1 AS bit), [s].[Photo]
+FROM [Students] AS [s]
+INNER JOIN [Groups] AS [g] ON [s].[GroupId] = [g].[Id]
+WHERE [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-09 01:51:04.274 +04:00 [INF] GetAll request processed successfully
+2024-06-09 01:51:04.284 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[FullName], [s].[Email], [s].[BirthDate], [s].[GroupId], [g].[No], CAST(1 AS bit), [s].[Photo]
+FROM [Students] AS [s]
+INNER JOIN [Groups] AS [g] ON [s].[GroupId] = [g].[Id]
+WHERE [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-09 01:51:04.289 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.StudentDtos.StudentGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-09 01:51:04.304 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.GetAll (Course.API) in 2174.608ms
+2024-06-09 01:51:04.304 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.GetAll (Course.API)'
+2024-06-09 01:51:04.304 +04:00 [INF] HTTP GET /api/Students responded 200 in 2211.1446 ms
+2024-06-09 01:51:04.312 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/api/Students - 200 null application/json; charset=utf-8 2223.5974ms
+2024-06-09 01:52:20.204 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/Students?FullName=ruslan&Email=ruslan%40mail.ru&BirthDate=10.10.2000&GroupId=2 - multipart/form-data; boundary=----WebKitFormBoundaryqGfsSGQ9RJ8f9jZ9 32397
+2024-06-09 01:52:20.211 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:52:20.212 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:52:20.223 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:52:20.304 +04:00 [INF] Create request received with Email: ruslan@mail.ru
+2024-06-09 01:52:20.485 +04:00 [INF] Executed DbCommand (49ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:52:20.636 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:52:20.831 +04:00 [INF] Executed DbCommand (28ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (Size = 35), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([BirthDate], [CreatedAt], [Email], [FullName], [GroupId], [IsDeleted], [ModifiedAt], [Photo])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-09 01:52:20.862 +04:00 [INF] Student created with Id: 7
+2024-06-09 01:52:20.862 +04:00 [INF] Student created with Id: 7
+2024-06-09 01:52:20.866 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:52:20.869 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:52:20.870 +04:00 [WRN] Student with Email: ruslan@mail.ru already exists
+2024-06-09 01:52:20.873 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 649.4019ms
+2024-06-09 01:52:20.874 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:52:20.885 +04:00 [INF] HTTP POST /api/Students responded 400 in 674.1455 ms
+2024-06-09 01:52:20.887 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/Students?FullName=ruslan&Email=ruslan%40mail.ru&BirthDate=10.10.2000&GroupId=2 - 400 null application/json; charset=utf-8 683.2646ms
+2024-06-09 01:53:47.690 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 01:53:47.710 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-09 01:53:47.729 +04:00 [INF] Hosting environment: Development
+2024-06-09 01:53:47.729 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-09 01:53:47.971 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 140.7858 ms
+2024-06-09 01:53:47.977 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 268.9933ms
+2024-06-09 01:53:47.979 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 01:53:47.983 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.5844ms
+2024-06-09 01:53:47.998 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-09 01:53:48.036 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.4898ms
+2024-06-09 01:53:48.234 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-09 01:53:48.452 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 216.4151 ms
+2024-06-09 01:53:48.453 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 219.2454ms
+2024-06-09 01:54:13.728 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/Students?FullName=rasim&Email=rasim%40code.edu.az&BirthDate=10.10.2000&GroupId=2 - multipart/form-data; boundary=----WebKitFormBoundarypvTcETBTSDSxp2Sn 78017
+2024-06-09 01:54:13.737 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:54:13.746 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:54:13.771 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:54:13.991 +04:00 [INF] Create request received with Email: rasim@code.edu.az
+2024-06-09 01:54:13.996 +04:00 [INF] Create method called with Email: rasim@code.edu.az
+2024-06-09 01:54:15.364 +04:00 [INF] Executed DbCommand (47ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:54:15.493 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:54:15.625 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (Size = 35), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([BirthDate], [CreatedAt], [Email], [FullName], [GroupId], [IsDeleted], [ModifiedAt], [Photo])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-09 01:54:15.650 +04:00 [INF] Student created with Id: 8
+2024-06-09 01:54:15.650 +04:00 [INF] Student created with Id: 8
+2024-06-09 01:54:15.651 +04:00 [INF] Create method called with Email: rasim@code.edu.az
+2024-06-09 01:54:15.659 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:54:15.664 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-09 01:54:15.664 +04:00 [WRN] Student with Email: rasim@code.edu.az already exists
+2024-06-09 01:54:15.671 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 1896.5202ms
+2024-06-09 01:54:15.672 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:54:15.680 +04:00 [INF] HTTP POST /api/Students responded 400 in 1942.2455 ms
+2024-06-09 01:54:15.691 +04:00 [INF] Request finished HTTP/2 POST https://localhost:44392/api/Students?FullName=rasim&Email=rasim%40code.edu.az&BirthDate=10.10.2000&GroupId=2 - 400 null application/json; charset=utf-8 1963.2641ms
+2024-06-09 01:54:26.901 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:44392/api/Students/5 - null null
+2024-06-09 01:54:26.904 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:54:26.904 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Delete (Course.API)'
+2024-06-09 01:54:26.908 +04:00 [INF] Route matched with {action = "Delete", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Delete(Int32) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:54:26.914 +04:00 [INF] Delete request received for Id: 5
+2024-06-09 01:54:26.915 +04:00 [INF] Delete method called for Id: 5
+2024-06-09 01:54:26.945 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0 AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-09 01:54:26.970 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Students]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-06-09 01:54:26.974 +04:00 [INF] Group deleted successfully for Id: 5
+2024-06-09 01:54:26.974 +04:00 [INF] Delete request processed successfully for Id: 5
+2024-06-09 01:54:26.978 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-06-09 01:54:26.979 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Delete (Course.API) in 70.8031ms
+2024-06-09 01:54:26.979 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Delete (Course.API)'
+2024-06-09 01:54:26.979 +04:00 [INF] HTTP DELETE /api/Students/5 responded 204 in 75.0951 ms
+2024-06-09 01:54:26.980 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:44392/api/Students/5 - 204 null null 79.3132ms
+2024-06-09 01:54:32.650 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:44392/api/Students/5 - null null
+2024-06-09 01:54:32.651 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:54:32.651 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Delete (Course.API)'
+2024-06-09 01:54:32.652 +04:00 [INF] Route matched with {action = "Delete", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Delete(Int32) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:54:32.656 +04:00 [INF] Delete request received for Id: 5
+2024-06-09 01:54:32.656 +04:00 [INF] Delete method called for Id: 5
+2024-06-09 01:54:32.735 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0 AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-09 01:54:32.736 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Delete (Course.API) in 83.8269ms
+2024-06-09 01:54:32.736 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Delete (Course.API)'
+2024-06-09 01:54:32.737 +04:00 [INF] HTTP DELETE /api/Students/5 responded 404 in 85.4344 ms
+2024-06-09 01:54:32.737 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:44392/api/Students/5 - 404 null application/json; charset=utf-8 86.7537ms
+2024-06-09 01:55:10.040 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 01:55:10.100 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-09 01:55:10.124 +04:00 [INF] Hosting environment: Development
+2024-06-09 01:55:10.124 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-09 01:55:10.439 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 152.9450 ms
+2024-06-09 01:55:10.444 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 01:55:10.448 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 353.7032ms
+2024-06-09 01:55:10.450 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.1022ms
+2024-06-09 01:55:10.487 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-09 01:55:10.528 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.4969ms
+2024-06-09 01:55:10.580 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-09 01:55:10.801 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 219.9325 ms
+2024-06-09 01:55:10.804 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 222.6168ms
+2024-06-09 01:55:39.530 +04:00 [INF] Request starting HTTP/2 POST https://localhost:44392/api/Students?FullName=nigar&Email=nigar%40mail.ru&BirthDate=10.10.2004&GroupId=2 - multipart/form-data; boundary=----WebKitFormBoundaryu4WQpa9HmrFMi7FP 25254
+2024-06-09 01:55:39.539 +04:00 [INF] CORS policy execution successful.
+2024-06-09 01:55:39.548 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-09 01:55:39.576 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-09 01:55:39.925 +04:00 [INF] Create request received with Email: nigar@mail.ru
+2024-06-09 01:55:44.874 +04:00 [INF] Create method called with Email: nigar@mail.ru
+2024-06-09 01:55:57.369 +04:00 [INF] Executed DbCommand (57ms) [Parameters=[@__dto_GroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__dto_GroupId_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-09 01:56:12.998 +04:00 [INF] Executed DbCommand (32ms) [Parameters=[@__ToUpper_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Students] AS [s]
+        WHERE UPPER([s].[Email]) = @__ToUpper_0 AND [s].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END

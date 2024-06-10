@@ -1,0 +1,12 @@
+C:\Users\kamal\Desktop\CourseApp\Course.Core\bin\Debug\net8.0\Course.Core.deps.json
+C:\Users\kamal\Desktop\CourseApp\Course.Core\bin\Debug\net8.0\Course.Core.dll
+C:\Users\kamal\Desktop\CourseApp\Course.Core\bin\Debug\net8.0\Course.Core.pdb
+C:\Users\kamal\Desktop\CourseApp\Course.Core\obj\Debug\net8.0\Course.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kamal\Desktop\CourseApp\Course.Core\obj\Debug\net8.0\Course.Core.AssemblyInfoInputs.cache
+C:\Users\kamal\Desktop\CourseApp\Course.Core\obj\Debug\net8.0\Course.Core.AssemblyInfo.cs
+C:\Users\kamal\Desktop\CourseApp\Course.Core\obj\Debug\net8.0\Course.Core.csproj.CoreCompileInputs.cache
+C:\Users\kamal\Desktop\CourseApp\Course.Core\obj\Debug\net8.0\Course.Core.dll
+C:\Users\kamal\Desktop\CourseApp\Course.Core\obj\Debug\net8.0\refint\Course.Core.dll
+C:\Users\kamal\Desktop\CourseApp\Course.Core\obj\Debug\net8.0\Course.Core.pdb
+C:\Users\kamal\Desktop\CourseApp\Course.Core\obj\Debug\net8.0\ref\Course.Core.dll
+C:\Users\kamal\Desktop\CourseApp\Course.Core\obj\Debug\net8.0\Course.Core.sourcelink.json
